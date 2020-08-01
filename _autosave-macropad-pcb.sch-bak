@@ -502,61 +502,6 @@ F 3 "" H 9375 3875 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9050 4050 9000 4050
-Wire Wire Line
-	9500 4050 9450 4050
-Wire Wire Line
-	9950 4050 9900 4050
-$Comp
-L Device:D_Small D2
-U 1 1 5F27215D
-P 9000 4150
-F 0 "D2" V 9046 4082 50  0000 R CNN
-F 1 "D_Small" V 8955 4082 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-123" V 9000 4150 50  0001 C CNN
-F 3 "~" V 9000 4150 50  0001 C CNN
-	1    9000 4150
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:D_Small D3
-U 1 1 5F273088
-P 9450 4150
-F 0 "D3" V 9496 4082 50  0000 R CNN
-F 1 "D_Small" V 9405 4082 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-123" V 9450 4150 50  0001 C CNN
-F 3 "~" V 9450 4150 50  0001 C CNN
-	1    9450 4150
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:D_Small D4
-U 1 1 5F273732
-P 9900 4150
-F 0 "D4" V 9946 4082 50  0000 R CNN
-F 1 "D_Small" V 9855 4082 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-123" V 9900 4150 50  0001 C CNN
-F 3 "~" V 9900 4150 50  0001 C CNN
-	1    9900 4150
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	9000 4250 9450 4250
-Connection ~ 9450 4250
-Wire Wire Line
-	9450 4250 9900 4250
-$Comp
-L Device:D_Small D1
-U 1 1 5F2760A0
-P 8550 4150
-F 0 "D1" V 8596 4082 50  0000 R CNN
-F 1 "D_Small" V 8505 4082 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-123" V 8550 4150 50  0001 C CNN
-F 3 "~" V 8550 4150 50  0001 C CNN
-	1    8550 4150
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
 	7950 3700 7950 3800
 Wire Wire Line
 	7950 4000 7950 4100
@@ -571,49 +516,68 @@ F 3 "" H 7100 3900 50  0001 C CNN
 	1    7100 3900
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:C_Small C9
-U 1 1 5F28C3AA
-P 7600 4000
-F 0 "C9" H 7692 4046 50  0000 L CNN
-F 1 "100nF" H 7692 3955 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 7600 4000 50  0001 C CNN
-F 3 "~" H 7600 4000 50  0001 C CNN
-	1    7600 4000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C8
-U 1 1 5F28D003
-P 7600 3800
-F 0 "C8" H 7692 3846 50  0000 L CNN
-F 1 "100nF" H 7692 3755 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 7600 3800 50  0001 C CNN
-F 3 "~" H 7600 3800 50  0001 C CNN
-	1    7600 3800
-	1    0    0    -1  
-$EndComp
-Connection ~ 7600 3900
-Wire Wire Line
-	7600 3900 7950 3900
-Wire Wire Line
-	7500 4100 7600 4100
-Connection ~ 7600 4100
-Wire Wire Line
-	7600 4100 7950 4100
-Wire Wire Line
-	7950 3700 7600 3700
-Connection ~ 7600 3700
-Wire Wire Line
-	7500 3700 7600 3700
 Wire Wire Line
 	8550 4000 8550 4050
-Connection ~ 9000 4250
-Connection ~ 8550 4250
 Wire Wire Line
-	8550 4250 9000 4250
+	9250 3850 9250 3600
 Wire Wire Line
-	8400 4250 8550 4250
+	9700 3850 9700 3600
 Wire Wire Line
-	7100 3900 7600 3900
+	10150 3850 10150 3600
+Wire Wire Line
+	8550 3800 8800 3800
+Wire Wire Line
+	8800 3800 8800 3600
+Wire Wire Line
+	8550 4050 9050 4050
+Connection ~ 9050 4050
+Wire Wire Line
+	9050 4050 9500 4050
+Connection ~ 9500 4050
+Wire Wire Line
+	9500 4050 9950 4050
+Wire Wire Line
+	8550 4050 8550 4200
+Connection ~ 8550 4050
+$Comp
+L power:GND #PWR0115
+U 1 1 5F277CD8
+P 8550 4200
+F 0 "#PWR0115" H 8550 3950 50  0001 C CNN
+F 1 "GND" H 8555 4027 50  0000 C CNN
+F 2 "" H 8550 4200 50  0001 C CNN
+F 3 "" H 8550 4200 50  0001 C CNN
+	1    8550 4200
+	1    0    0    -1  
+$EndComp
+Text GLabel 8800 3600 1    50   Input ~ 0
+ROT
+Text GLabel 9250 3600 1    50   Input ~ 0
+MX1
+Text GLabel 9700 3600 1    50   Input ~ 0
+MX2
+Text GLabel 10150 3600 1    50   Input ~ 0
+MX3
+Text GLabel 6350 4350 2    50   Input ~ 0
+ROT
+Text GLabel 6350 3050 2    50   Input ~ 0
+MX1
+Text GLabel 6350 3350 2    50   Input ~ 0
+MX2
+Text GLabel 6350 3450 2    50   Input ~ 0
+MX3
+Text GLabel 7500 3700 0    50   Input ~ 0
+ROTA
+Text GLabel 7500 4100 0    50   Input ~ 0
+ROTB
+Text GLabel 6350 2850 2    50   Input ~ 0
+ROTA
+Text GLabel 6350 2950 2    50   Input ~ 0
+ROTB
+Wire Wire Line
+	7500 3700 7950 3700
+Wire Wire Line
+	7100 3900 7950 3900
+Wire Wire Line
+	7500 4100 7950 4100
 $EndSCHEMATC
