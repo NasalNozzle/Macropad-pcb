@@ -571,6 +571,8 @@ Connection ~ 8900 4400
 Wire Wire Line
 	8900 4400 8600 4400
 Wire Wire Line
+	8900 4450 8900 4700
+Wire Wire Line
 	9600 4700 9600 4000
 Connection ~ 9600 4000
 Wire Wire Line
@@ -591,6 +593,4 @@ Text GLabel 6350 4350 2    50   Input ~ 0
 ROW0
 Text GLabel 6350 3050 2    50   Input ~ 0
 ROW1
-Wire Wire Line
-	8900 4400 8900 4700
 $EndSCHEMATC
